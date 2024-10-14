@@ -1,438 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        /* Sticky Navbar */
-        .navbar {
-            background-color: #333; /* Dark background for navbar */
-        }
-
-        .navbar-brand {
-            color: #fff; /* White text for brand */
-        }
-
-        .navbar-nav .nav-link {
-            color: #fff; /* White text for nav links */
-            padding: 15px 20px; /* Padding for nav links */
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #f06292; /* Pink color on hover */
-            text-decoration: underline; /* Underline on hover */
-        }
-
-        .fixed-top {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1030; /* Ensure the navbar is above other content */
-        }
-
-        body {
-            padding-top: 80px; /* Adjust this value based on the navbar height */
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 767.98px) {
-            .navbar-nav .nav-link {
-                padding: 10px; /* Adjust padding for mobile view */
-            }
-        }
-
-        body {
-            background: url('images/about/background.jpg') no-repeat center center fixed;
-            /* background: url('images/about/background12.jpg'); */
-            background-size: cover;
-            color: #000;
-        }
-        .about-section, .projects-section, .skills-section, .contact-section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .about-section h2, .projects-section h2, .skills-section h2, .contact-section h2 {
-            margin-bottom: 40px;
-            font-size: 4rem;
-            font-weight: 700;
-            /* font-family: 'Georgia', serif; */
-            font-family: 'Courier New', monospace;
-            font-style: normal; /* or italic */
-            color: #000;
-        }
-        .about-section .profile-pic {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            margin-bottom: 30px;
-        }
-        .about-section p {
-            max-width: 800px;
-            margin: 0 auto 30px;
-            font-size: 1.5rem;
-            line-height: 1.6;
-            color: #333333; /* Hex */
-            color: rgb(51, 51, 51); /* RGB */
-            color: hsl(0, 0%, 20%);
-            font-weight: 500; /* Slightly bolder */
-        }
-        .card {
-            margin: 20px;
-        }
-        .card-body a {
-            display: block;
-            margin-top: 10px;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            margin-bottom: 40px;
-            color: #0f0e0e;
-        }
-        .contact-info div {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 1.2rem;
-        }
-        .contact-info div i {
-            font-size: 1.5rem;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .social-icons a {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background-color: #f06292;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: transform 0.3s;
-        }
-        .social-icons a:hover {
-            transform: scale(1.1);
-        }
-        .social-icons img {
-            width: 25px;
-            height: 25px;
-        }
-        .contact-section {
-            background-color: #f6f1f1;
-            color: #fff;
-        }
-        .certifications-section h2 {
-            margin-bottom: 40px;
-            font-size: 3rem;
-            font-weight: 700;
-            color: #000;
-        }
-
-        .certifications-section .card {
-            border: none;
-            transition: transform 0.2s;
-        }
-
-        .certifications-section .card:hover {
-            transform: scale(1.05);
-        }
-
-        .certifications-section .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="certificates.css">
+  <title>Vipin's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="img/r (1).jpg">
 </head>
+
 <body>
-    <!-- Home Section -->
-    <section id="home">
-        <!-- Home section content -->
-    </section>
-    <!-- Navigation Bar -->
-     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">MY PORTFOLIO</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certifications">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+    <!-- Header -->
+    <section id="header">
+        <div class="header container">
+        <div class="nav-bar">
+            <div class="brand">
+            <a href="#hero">
+                <h1><span>My  </span>Port<span>folio</span></h1>
+            </a>
+            </div>
+            <div class="nav-list">
+            <div class="hamburger">
+                <div class="bar"></div>
+            </div>
+            <ul>
+                <li><a href="#hero" data-after="Home">Home</a></li>
+                <li><a href="#about" data-after="About">About</a></li>
+                <li><a href="#projects" data-after="Projects">Projects</a></li>
+                <li><a href="#services" data-after="services">Certifications</a></li>
+                <li><a href="#skills" data-after="About">Skills</a></li>
+                <li><a href="#contact" data-after="Contact">Contact</a></li>
+            </ul>
             </div>
         </div>
-    </nav>
+        </div>
+    </section>
+    <!-- End Header -->
 
-    <!-- About Section -->
-    <section id='about' class="about-section">
-        <h2>Hi, I am VIPIN PARAMESWARAN</h2>
-        <img src="images/about/profile1.jpg" alt="Profile Picture" class="profile-pic">
-        <p>I am an enthusiastic and detail-oriented Data Analyst with a strong foundation in data analysis and statistical methods. My recent completion of the IBM Data Science course on Coursera has equipped me with practical experience in Python, SQL, and data visualization. I am passionate about leveraging these skills to drive business insights and deliver effective solutions.</p>
-        <p>During my studies, I honed my ability to derive meaningful insights from complex datasets and develop robust analytical solutions. I thrive on challenges and enjoy working on end-to-end projects, from data collection and preprocessing, visualizing results and presenting actionable insights to predicting the unknown outcomes. My analytical skills, combined with my proficiency in Machine Learning, data visualization and statistical analysis, enable me to tackle a variety of data-driven problems.</p>
-        <p>Feel free to explore my projects and articles in the sections below. I welcome you to download my code from GitHub and explore the work I’ve shared. My goal is to combine my technical skills with a passion for storytelling to drive meaningful business outcomes.</p>
+
+    <!-- Hero Section  -->
+    <section id="hero">
+        <div class="hero container">
+        <div>
+            <h1>Hello,<span></span></h1>
+            <h1>Its me..!!!!<span></span></h1>
+            <h1>Vipin Parameswaran<span></span></h1>
+            <h1>Welcome<span></span></h1>
+            <h1>to my<span></span></h1>
+            <a href="#projects" type="button" class="cta">Portfolio</a>
+        </div>
+        </div>
     </section>
 
+    <!-- Hero Section  -->
+    <!-- <section id="hero">
+        <div class="hero container">
+        <div>
+            <h1>Hello, <span></span></h1>
+            <h1>My Name is <span></span></h1>
+
+            <h1>Vipin Parameswaran <span></span></h1>
+            <a href="#projects" type="button" class="cta">Portfolio</a>
+        </div>
+        </div>
+    </section> -->
+
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about container">
+        <div class="col-left">
+            <div class="about-img">
+            <img src="./images/about/profile1.jpg" alt="img">
+            </div>
+        </div>
+        <div class="col-right">
+            <h1 class="section-title">About <span>me</span></h1>
+            <h2>Data Analyst</h2>
+            <p>Welcome to my portfolio! I am a passionate data analyst with expertise in various tools and technologies. My journey involves working on projects that revolve around data visualization, statistical analysis, and generating business insights to drive informed decisions.</p>
+            <p>During my studies, I honed my ability to derive meaningful insights from complex datasets and develop robust analytical solutions. I thrive on challenges and enjoy working on end-to-end projects, from data collection and preprocessing, visualizing results and presenting actionable insights to predicting the unknown outcomes. My analytical skills, combined with my proficiency in Machine Learning, data visualization and statistical analysis, enable me to tackle a variety of data-driven problems.</p>
+            <p>Feel free to explore my projects and articles in the sections below. I welcome you to download my code from GitHub and explore the work I’ve shared. My goal is to combine my technical skills with a passion for storytelling to drive meaningful outcomes.</p>
+            <a href="./images/Vipin_Parameswaran_Resume.pdf" download="Vipin Resume" class="cta">Download Resume</a>
+        </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="container">
-            <!-- First Row of Projects -->
-            <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="images/projects/Olympics3.png" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Paris Olympics 2024</h5>
-                            <p class="card-text">The visualizations using Python's Pandas, Matplotlib, Seaborn, and Plotly provide dynamic insights into the Paris Olympics 2024 datasets, revealing key patterns in athlete performance, country participation, and medal distribution.</p>
-                            <p class="card-text">Also created a Power BI dashboard for the Paris Olympics 2024 which offers an intuitive and interactive platform to explore real-time data, track key metrics, and visualize trends related to the games, enabling users to gain actionable insights with ease.</p>
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title">Recent <span>Projects</span></h1>
+            </div>
+            <div class="all-projects">
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Paris Olympics 2024</h1>
+                        <h2>Data Analysis and Visualization</h2>
+                        <p>The visualizations using Python's Pandas, Matplotlib, Seaborn, and Plotly provide dynamic insights into the Paris Olympics 2024 datasets, revealing key patterns in athlete performance, country participation, and medal distribution. Additionally, a Power BI dashboard offers an intuitive and interactive platform to explore real-time data, track key metrics, and visualize trends related to the games, enabling users to gain actionable insights with ease.</p>
+                        <div class="btn-container">
                             <a href="https://app.powerbi.com/links/9tqgn7pY2C?ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154&pbi_source=linkShare&bookmarkGuid=8e05350d-a5d0-406c-a31f-f0835cb37c86" class="btn btn-primary">Explore Dashboard</a>
                             <a href="https://github.com/Vipin-Parameswaran/PARIS-OLYMPICS-2024-ANALYSIS/tree/main/PARIS%20OLYMPICS%202024%20ANALYSIS" class="btn btn-secondary">Source Code</a>
+                        </div>                    
                         </div>
+                    <div class="project-img">
+                        <img src="images/projects/Olympics3.png" alt="Paris Olympics 2024">
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="images/projects/FHS.png" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Framingham Heart Study Analysis</h5>
-                            <p class="card-text">In this project, I analyzed data from the Framingham Heart Study to visualize the risk factors for heart disease and built a machine learning pipeline using decision trees to predict the ten-year risk of Coronary Heart Disease. The model's performance was evaluated to identify the most significant predictors and to improve its accuracy in forecasting heart disease risk.</p>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Framingham Heart Study Analysis</h1>
+                        <h2>Predictive Analytics</h2>
+                        <p>Analyzed data from the Framingham Heart Study to visualize risk factors for heart disease and built a machine learning pipeline using decision trees to predict the ten-year risk of Coronary Heart Disease. The model's performance was evaluated to identify significant predictors and to improve accuracy in forecasting heart disease risk.</p>
+                        <div class="btn-container">
                             <a href="https://github.com/Vipin-Parameswaran/FRAMINGHAM-HEART-STUDY-ANALYSIS/blob/main/README.md" class="btn btn-primary">About Project</a>
                             <a href="https://github.com/Vipin-Parameswaran/FRAMINGHAM-HEART-STUDY-ANALYSIS" class="btn btn-secondary">Source Code</a>
                         </div>
+                        </div>
+                    <div class="project-img">
+                        <img src="images/projects/FHS.png" alt="Framingham Heart Study">
                     </div>
                 </div>
-            <!-- Second Row of Projects -->
-            <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="images/projects/bank.png" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Bank Loan Eligibility Prediction</h5>
-                            <p class="card-text">In this project, I analyzed a loan dataset using Machine Learning models DecisionTreeClassifier, RandomForestClassifier, Naive bayes and selected the best suited model on the basis of accuracy score for the prediction. Used the best model for predicting real dataset outcomes.</p>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Bank Loan Eligibility Prediction</h1>
+                        <h2>Machine Learning Model</h2>
+                        <p>Analyzed a loan dataset using multiple Machine Learning models (DecisionTreeClassifier, RandomForestClassifier, Naive Bayes) to predict loan eligibility. Selected the best-suited model based on accuracy score for predicting outcomes on real datasets.</p>
+                        <div class="btn-container">
                             <a href="https://github.com/Vipin-Parameswaran/Data_Analytics_Project--Bank_Loan_Eligibility_Prediction/blob/main/README.md" class="btn btn-primary">About Project</a>
                             <a href="https://github.com/Vipin-Parameswaran/Data_Analytics_Project--Bank_Loan_Eligibility_Prediction/tree/main/Bank%20Loan%20Eligibility%20Prediction" class="btn btn-secondary">Source Code</a>
                         </div>
+                        </div>
+                    <div class="project-img">
+                        <img src="images/projects/bank.png" alt="Bank Loan Eligibility">
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="images/projects/ftag.png" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Fastag Fraud Detection</h5>
-                            <p class="card-text">This project focuses on developing a robust machine learning-based fraud detection system for Fastag transactions. Fastag is an electronic toll collection system in India that uses RFID technology to make toll payments directly from a prepaid account linked to a user’s vehicle.</p>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Fastag Fraud Detection</h1>
+                        <h2>Fraud Detection System</h2>
+                        <p>Developed a robust machine learning-based fraud detection system for Fastag transactions, using RFID technology to secure toll payments, minimizing risks and improving transaction integrity.</p>
+                        <div class="btn-container">
                             <a href="https://github.com/Vipin-Parameswaran/FASTAG_FRAUD_DETECTION-Data_Analytics_Project/blob/main/README.md" class="btn btn-primary">About Project</a>
                             <a href="https://github.com/Vipin-Parameswaran/FASTAG_FRAUD_DETECTION-Data_Analytics_Project/tree/main/FastTag%20Fraud%20Detection" class="btn btn-secondary">Source Code</a>
                         </div>
+                        </div>
+                    <div class="project-img">
+                        <img src="images/projects/ftag.png" alt="Fastag Fraud Detection">
                     </div>
                 </div>
-            </div>
-            <!-- Third Row of Projects -->
-            <div class="row justify-content-center">
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="images/projects/Maven_Market.png" class="card-img-top" alt="Project 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Maven Market Analysis</h5>
-                            <p class="card-text">In this project, I applied my Power BI skills to analyze data from Maven Market, a multi-national grocery chain operating in Canada, Mexico, and the United States. The project involved the complete business intelligence workflow, from connecting and shaping the raw data to building a relational model, creating calculated fields, and designing an interactive report.</p>
+
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Maven Market Analysis</h1>
+                        <h2>Business Intelligence</h2>
+                        <p>Applied Power BI skills to analyze data from Maven Market, a multi-national grocery chain. Involved in complete business intelligence workflow, creating calculated fields, and designing an interactive report for actionable insights.</p>
+                        <div class="btn-container">
                             <a href="https://app.powerbi.com/links/7ShV5BnaSG?ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154&pbi_source=linkShare" class="btn btn-primary">Explore Dashboard</a>
                         </div>
+                        </div>
+                    <div class="project-img">
+                        <img src="images/projects/Maven_Market.png" alt="Maven Market Analysis">
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="images/projects/AdventureWorks.png" class="card-img-top" alt="Project 5">
-                        <div class="card-body">
-                            <h5 class="card-title">Adventure Works Dashboard</h5>
-                            <p class="card-text">For this project, I worked on developing an interactive dashboard for Adventure Works, a fictional global manufacturing company specializing in cycling equipment and accessories. My goal was to track key performance indicators (KPIs) such as sales, revenue, profit, and returns, while also comparing performance across regions and analyzing product-level trends.</p>
-                            <!-- <a href="#" class="btn btn-primary">Blog Post</a> -->
-                            <a href="https://app.powerbi.com/reportEmbed?reportId=2364b5ff-0159-42ff-af95-6a52d6e66065&autoAuth=true&ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154" class="btn btn-primary">Explore dashboard</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-md-4 col-sm-12">
-                    <div class="card">
-                        <img src="images/projects/6.jpg" class="card-img-top" alt="Project 6">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 6</h5>
-                            <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                            <a href="#" class="btn btn-primary">Blog Post</a>
-                            <a href="#" class="btn btn-secondary">Source Code</a>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
 
-    <!-- Certification Section -->
-    <section id="certifications" class="certifications-section py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Certifications</h2>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="images/certifications/ibm_logo.png" class="card-img-top" alt="Certification 1">
-                        <div class="card-body">
-                            <h5 class="card-title">IBM DATA SCIENCE PROFFESSIONAL CERTIFICATION</h5>
-                            <p class="card-text">The program included courses on Python, data analysis, machine learning, data visualization, and SQL.
-                                Practical projects and hands-on labs were integral parts of the training, providing real-world experience
-                                in applying data science techniques to solve complex problems.</p>
-                            <a href="https://github.com/Vipin-Parameswaran/IBM_DataScience_Proffessional_Certificate/tree/main" class="btn btn-primary">View Certificate</a>
+                <div class="project-item">
+                    <div class="project-info">
+                        <h1>Adventure Works Dashboard</h1>
+                        <h2>Data Visualization</h2>
+                        <p>Developed an interactive dashboard for Adventure Works, tracking key performance indicators (KPIs) like sales, revenue, and profit while analyzing product-level trends across regions.</p>
+                        <div class="btn-container">
+                            <a href="https://app.powerbi.com/reportEmbed?reportId=2364b5ff-0159-42ff-af95-6a52d6e66065&autoAuth=true&ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154" class="btn btn-primary">Explore Dashboard</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="images/certifications/udemy_logo1.png" class="card-img-top" alt="Certification 2">
-                        <div class="card-body">
-                            <h5 class="card-title">MICROSOFT POWER BI DESKTOP FOR BUSINESS INTELLIGENCE</h5>
-                            <p class="card-text">The program included comprehensive training on data modeling, data visualization, and business intelligence reporting using Power BI. Hands-on projects and practical exercises were integral, providing real-world experience in crafting insightful dashboards and reports for complex business scenarios.</p>
-                            <a href="#" class="btn btn-primary">View Certificate</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="images/certifications/nassccom_logo.png" class="card-img-top" alt="Certification 3">
-                        <div class="card-body">
-                            <h5 class="card-title">NASSCCOM CERTIFIED - AI - DATA SCIENTIST (SSC/Q8104)</h5>
-                            <p class="card-text">Achieved the NASSCOM Certified AI Data Scientist (SSC/Q8104) certification, demonstrating advanced skills in data science. This exam certification aligns with the National Skill Qualifications Framework Level 8, affirming expertise in predictive modeling and machine learning.</p>
-                            <a href="https://github.com/Vipin-Parameswaran/Nassccom-Certificate/blob/main/Nassccom_certification_DS.pdf" class="btn btn-primary">View Certificate</a>
-                        </div>
+                    <div class="project-img">
+                        <img src="images/projects/AdventureWorks.png" alt="Adventure Works Dashboard">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End Projects Section -->
+
+    <!-- Service Section -->
+    <section id="services">
+        <div class="services container">
+        <div class="service-top">
+            <h1 class="section-title">Cerif<span>icates</span></h1>
+            <h2>Here are some of the certifications I have earned to enhance my skills and knowledge in data analysis, machine learning, and AI.</h2>
+        </div>
+        <div class="service-bottom">
+            <div class="service-item">
+            <div class="icon"><img src="images/certifications/ibm_logo.png" /></div>
+            <h2>IBM DATA SCIENCE PROFFESSIONAL CERTIFICATION</h2>
+            <p class="card-text">The program included courses on Python, data analysis, machine learning, data visualization, and SQL.
+                Practical projects and hands-on labs were integral parts of the training, providing real-world experience
+                in applying data science techniques to solve complex problems.</p>
+            <div class="btn-container">
+                <a href="https://github.com/Vipin-Parameswaran/IBM_DataScience_Proffessional_Certificate/tree/main" class="btn btn-primary">View Certificate</a>
+            </div>
+            </div>
+            <div class="service-item">
+            <div class="icon"><img src="images/certifications/udemy_logo1.png" /></div>
+            <h2>MICROSOFT POWER BI DESKTOP FOR BUSINESS INTELLIGENCE</h2>
+            <p class="card-text">The program included comprehensive training on data modeling, data visualization, and business intelligence reporting using Power BI. Hands-on projects and practical exercises were integral, providing real-world experience in crafting insightful dashboards and reports for complex business scenarios.</p>
+            <div class="btn-container">
+                <a href="https://drive.google.com/file/d/1o3bWC6QXdhI0uUqzxEzga65A2OIzYnFp/view?usp=drive_link" class="btn btn-primary">View Certificate</a>
+            </div>
+            </div>
+            <div class="service-item">
+            <div class="icon"><img src="images/certifications/nassccom_logo.png" /></div>
+            <h2>NASSCCOM CERTIFIED - AI - DATA SCIENTIST (SSC/Q8104)</h2>
+            <p class="card-text">Achieved the NASSCOM Certified AI Data Scientist (SSC/Q8104) certification, demonstrating advanced skills in data science. This exam certification aligns with the National Skill Qualifications Framework Level 8, affirming expertise in predictive modeling and machine learning.</p>
+            <div class="btn-container">
+                <a href="https://drive.google.com/file/d/1sbT64DP3oo0ae_UxCahW2oH6hmUfKLsV/view?usp=drive_link" class="btn btn-primary">View Certificate</a>
+            </div>
+            </div>
+            <div class="service-item">
+            <div class="icon"><img src="images/certifications/forage_icon.png" /></div>
+            <h2>Accenture Data Analytics and Visualization - Virtual Internship</h2>
+            <p> Completed a job simulation from Accenture. Analyzed and modeled datasets to uncover social media trends, providing actionable
+                insights that shaped the client’s strategy.
+                Created and presented a PowerPoint deck and video presentation to effectively
+                communicate insights.
+            </p>
+            <div class="btn-container">
+                <a href="https://drive.google.com/file/d/1YKqgSN4MaYfUUNyCiSHWZ8cyp08h-b1Y/view?usp=drive_link" class="btn btn-primary">View Certificate</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+   <!-- End Service Section -->
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2>Skills</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-12">
-                    <div class="card">
-                        <img src="images/skills/1.png" class="card-img-top" alt="Python">
-                        <div class="card-body">
-                            <h5 class="card-title">Programming Languages</h5>
-                            <p class="card-text">PYTHON,
-                                SQL,
-                                R,
-                                Basics in HTML, CSS
-                            </p>
-                            <!-- <a href="#" class="btn btn-primary">Link to course or bootcamp</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="card">
-                        <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
-                        <div class="card-body">
-                            <h5 class="card-title">Data Visualization</h5>
-                            <p class="card-text">Matplotlib, Seaborn, POWER BI Dasboards</p>
-                            <!-- <a href="#" class="btn btn-primary">Link to course or bootcamp</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="card">
-                        <img src="images/skills/3.png" class="card-img-top" alt="SQL">
-                        <div class="card-body">
-                            <h5 class="card-title">DATABASE MANAGEMENT</h5>
-                            <p class="card-text">MySQL, PostgreSQL,
-                                SQLite</p>
-                            <!-- <a href="#" class="btn btn-primary">Link to course or bootcamp</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <div class="card">
-                        <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
-                        <div class="card-body">
-                            <h5 class="card-title">MACHINE LEARNING</h5>
-                            <p class="card-text">Scikit-Learn, ML Algorithms
-                            </p>
-                            <!-- <a href="#" class="btn btn-primary">Link to course or bootcamp</a> -->
-                        </div>
-                    </div>
-                </div>
+    <section id="skills">
+        <div class="skills container">
+        <div class="skills-top">
+            <h1 class="section-title">Sk<span>ills</span></h1>
+        </div>
+        <div class="skills-bottom">
+            <div class="skills-item">
+            <div class="icon"><img src="images/skills/1.png" alt="Programming Languages"></div>
+            <h2>Programming Languages</h2>
+            <p class="card-text">Python, SQL, R, Advanced Excel, Basics in HTML, CSS</p>
+            </div>
+            <div class="skills-item">
+            <div class="icon"><img src="images/skills/2.png" alt="Data Visualization"></div>
+            <h2>Data Visualization</h2>
+            <p class="card-text">Matplotlib, Seaborn, Power BI, Tableau</p>
+            </div>
+            <div class="skills-item">
+            <div class="icon"><img src="images/skills/3.png" alt="Database Management"></div>
+            <h2>Database Management</h2>
+            <p class="card-text">MySQL, PostgreSQL, SQLite</p>
+            </div>
+            <div class="skills-item">
+            <div class="icon"><img src="images/skills/4.png" alt="Machine Learning"></div>
+            <h2>Machine Learning</h2>
+            <p class="card-text">Scikit-Learn, ML Algorithms</p>
+            </div>
             </div>
         </div>
+        </div>
     </section>
+    <!-- End Skills Section -->
 
-    <!-- Contact Me Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <div class="container">
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact container">
+        <div>
+            <h1 class="section-title">Contact <span>info</span></h1>
+        </div>
+        <div class="contact-items">
+            <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
             <div class="contact-info">
-                <div>
-                    <i class="bi bi-envelope"></i>
-                    <span>vipinparameswaran1985.com</span>
-                </div>
-                <div>
-                    <i class="bi bi-phone"></i>
-                    <span>9605151985</span>
-                </div>
+                <h1>Phone</h1>
+                <h2>+91 9605151985</h2>
             </div>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/vipin-parameswaran/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
-                    <img src="icons/linkedin.png" alt="LinkedIn">
-                </a>
-                <!-- <a href="https://twitter.com/your-profile" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
-                    <img src="icons/twitter.png" alt="Twitter">
-                </a> -->
-                <a href="https://github.com/Vipin-Parameswaran" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
-                    <img src="icons/github.png" alt="GitHub">
-                </a>
-                <a href="https://linktr.ee/Vipin_Parameswaran" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="linktree">
-                    <img src="icons/linktree_logo.png" alt="linktree">
-                </a>
-                <!-- <a href="https://www.instagram.com/vip__.in_/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="instagram">
-                    <img src="icons/insta_logo.png" alt="instagram">
-                </a> -->
+            </div>
+            <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+            <div class="contact-info">
+                <h1>Email</h1>
+                <h2>vipinparameswaran1985@gmail.com</h2>
+            </div>
+            </div>
+            <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+            <div class="contact-info">
+                <h1>Secondary Email</h1>
+                <h2>15180095vpn@gmail.com</h2>
+            </div>
+            </div>
+            <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+            <div class="contact-info">
+                <h1>Address</h1>
+                <h2>Palakkad, Kerala, India - 678508</h2>
+            </div>
             </div>
         </div>
+        </div>
     </section>
+    <!-- End Contact Section -->
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-                return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
-        })
-    </script>
+    <!-- Footer -->
+    <section id="footer">
+        <div class="footer container">
+        <div class="brand">
+            <h1><span>V</span>ipin <span> P</span>arameswaran</h1>
+        </div>
+        <h2>Feel Free to Connect</h2>
+        <div class="social-icon">
+            <div class="social-item">
+            <a href="https://www.linkedin.com/in/vipin-parameswaran/"><img src="./icons/linkedin.png" alt="img" /></a>
+            </div>
+            <div class="social-item">
+            <a href="https://github.com/Vipin-Parameswaran"><img src="./icons/github.png" alt="img"/></a>
+            </div>
+            <div class="social-item">
+            <a href="https://linktr.ee/Vipin_Parameswaran"><img src="./icons/linktree_logo.png" alt="img" /></a>
+            </div>
+            <div class="social-item">
+            <a href="https://www.novypro.com/profile_about/vipin-parameswaran"><img src="./icons/novypro_logo.png" alt="img" /></a>
+            </div>
+            <div class="social-item">
+            <a href="https://www.instagram.com/vip__.in_/"><img src="./icons/insta_logo.png" alt="img" /></a>
+            </div>
+        </div>
+        <p>***</p>
+        </div>
+    </section>
+    <!-- End Footer -->
+<script src="./app.js"></script>
 </body>
+
 </html>
