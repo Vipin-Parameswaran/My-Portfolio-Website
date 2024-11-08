@@ -410,7 +410,7 @@ p {
 }
 
 #skills .skills-item h2 {
-    font-size: 3rem;
+    font-size: 5rem;
     color: white;
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -426,106 +426,138 @@ p {
 
 
 /* Projects section */
+
+/* General Project Section Styling */
 #projects .projects {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 0;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
 }
 #projects .projects-header h1 {
-	margin-bottom: 50px;
+    margin-bottom: 60px;
 }
-#projects .all-projects {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-#projects .project-item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 80%;
-	margin: 20px auto;
-	overflow: hidden;
-	border-radius: 10px;
-}
-#projects .project-info {
-	padding: 30px;
-	flex-basis: 50%;
-	height: 100%;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
-}
-#projects .project-info h1 {
-	font-size: 4rem;
-	font-weight: 500;
-}
-#projects .project-info h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	margin-top: 10px;
-}
-#projects .project-info p {
-	color: white;
-}
-#projects .project-img {
-	flex-basis: 50%;
-	height: 300px;
-	overflow: hidden;
-	position: relative;
-}
-#projects .project-img:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	/* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7; */
-}
-#projects .project-img img {
-	transition: 0.3s ease transform;
-}
-#projects .project-item:hover .project-img img {
-	transform: scale(1.1);
-}
-/* End Projects section */
-
-/* Updated Project Links Styling */
-/* Updated Project Info Styling to Prevent Overlap */
-#projects .project-info p {
-    color: white;
-    margin-bottom: 20px; /* Adds space below the paragraph to avoid overlap with buttons */
+.project-subheading {
+    font-size: 5rem;
+    text-align: center;
+    color: #767171;
+    margin: 40px 0 20px;
 }
 
-#projects .project-info .btn-container {
-    display: flex; /* Use flexbox for buttons */
-    gap: 15px; /* Add spacing between buttons */
-    margin-top: 10px; /* Add some space above the buttons */
+/* Project Row Styling for Two-Column Layout */
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-#projects .project-info .btn {
-    font-size: 1.2rem; /* Increase the font size */
+/* Uniform Project Container Styling */
+.project-item {
+    position: relative;
+    flex: 1 1 45%;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    border-radius: 20px;
+    color: #ffffff;
+    text-align: left;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    background-blend-mode: overlay;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: 0.9;
+    /* Remove z-index: -1 here */
+}
+
+/* Overlay for Dim Background */
+.project-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 11, 11, 0.7);
+    z-index: 1;
+    transition: 0.3s ease;
+}
+
+/* Overlay Content Styling */
+.project-item .overlay {
+    position: relative;
+    z-index: 2; /* Ensure overlay content is above the dim layer */
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Project Text Styling */
+.project-item h1 {
+    color: #ffffff;
+    margin: 15px 0;
+    font-size: 2.5rem;
+}
+.project-item h2, 
+.project-item p {
+    color: #ffffff;
+    margin: 15px 0;
+    font-size: 1.75rem;
+}
+
+/* Buttons in Project Section */
+.project-item .btn-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    z-index: 3; /* Ensures buttons are above other elements */
+}
+
+.project-item .btn {
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #ffffff; /* White text color for better contrast */
-    background-color: #007bff; /* Bright blue background color */
-    border: none;
+    color: #ffffff;
+    background-color: #007bff;
     padding: 10px 20px;
-    text-decoration: none; /* Remove underline from links */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
+    border: none;
+    text-decoration: none;
+    cursor: pointer; /* Ensures cursor shows as a pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#projects .project-info .btn:hover {
-    background-color: #0056b3; /* Darker blue for hover effect */
-    color: #e0e0e0; /* Light grey text color on hover */
+.project-item .btn-secondary {
+    background-color: #6c757d;
 }
+
+.project-item .btn:hover {
+    background-color: #0056b3;
+    color: #e0e0e0;
+}
+
+/* Hover Effect for Scale */
+.project-item:hover::after {
+    opacity: 0.9;
+}
+
+.project-item:hover .overlay h1, 
+.project-item:hover .overlay h2, 
+.project-item:hover .overlay p {
+    color: #ffffff;
+}
+
+/* Responsive Design for Single Column on Smaller Screens */
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%;
+    }
+}
+
 
 
 /* About Section */
