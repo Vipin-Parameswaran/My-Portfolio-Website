@@ -1,476 +1,336 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vipin Parameswaran | Data Analyst · Power BI · SQL · Python</title>
+  <meta name="description" content="Vipin Parameswaran – Data Analyst based in Dubai. Power BI, SQL, Python, Advanced Excel, Machine Learning and business storytelling.">
+  <link rel="icon" type="image/jpeg" href="images/about/profile1.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="certificates.css">
-  <title>Vipin's Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="img/r (1).jpg">
 </head>
-
 <body>
-    <!-- Header -->
-    <section id="header">
-        <div class="header container">
-        <div class="nav-bar">
-            <div class="brand">
-            <a href="#hero">
-                <h1><span>My  </span>Port<span>folio</span></h1>
-            </a>
-            </div>
-            <div class="nav-list">
-            <div class="hamburger">
-                <div class="bar"></div>
-            </div>
+  <div class="scroll-progress" id="progress"></div>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <div class="glow glow-1"></div><div class="glow glow-2"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">VP<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+        <a href="#contact" class="btn btn-sm btn-primary hide-sm">Hire me</a>
+        <button class="icon-btn burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text reveal">
+        <span class="badge"><i class="dot"></i> Open to Data Analyst opportunities · Dubai, UAE</span>
+        <h1>Hi, I'm <span class="grad">Vipin Parameswaran</span></h1>
+        <h2 class="typing">I turn data into <span id="typed" class="grad-2"></span><span class="cursor">|</span></h2>
+        <p class="lead">Data Analyst with 4+ years of experience building Power BI dashboards, SQL analyses, Python automations and machine-learning models that help teams across sales, logistics, finance and operations make faster, evidence-based decisions.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View my work →</a>
+          <a href="images/Vipin_Parameswaran_Resume.pdf" download="Vipin_Parameswaran_Resume.pdf" class="btn btn-ghost">⬇ Download Resume</a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/Vipin-Parameswaran" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/vipin-parameswaran/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://linktr.ee/Vipin_Parameswaran" target="_blank" rel="noopener">Linktree</a>
+          <a href="https://www.novypro.com/profile_about/vipin-parameswaran" target="_blank" rel="noopener">NovyPro</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="photo-card">
+          <div class="photo-ring"></div>
+          <img src="images/about/profile1.jpg" alt="Vipin Parameswaran – Data Analyst">
+          <div class="float-chip chip-1"><b>Power BI</b><small>Dashboards & DAX</small></div>
+          <div class="float-chip chip-2"><b>SQL</b><small>PostgreSQL · MySQL</small></div>
+          <div class="float-chip chip-3"><b>Python</b><small>Pandas · ML</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap stats reveal">
+      <div class="stat"><b data-count="4" data-suffix="+">0</b><span>Years in data</span></div>
+      <div class="stat"><b data-count="9" data-suffix="+">0</b><span>Portfolio projects</span></div>
+      <div class="stat"><b data-count="40" data-suffix="%">0</b><span>Manual reporting cut</span></div>
+      <div class="stat"><b data-count="97" data-suffix="%">0</b><span>Best model accuracy</span></div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="eyebrow">01 — About</span><h2>Analyst. Automator. <span class="grad">Storyteller.</span></h2></div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a <strong>professional Data Analyst</strong> who bridges raw data and business decisions. At <strong>Husaini Brothers LLC (Dubai)</strong> I partnered with Sales, Marketing, Logistics, Finance, Procurement, HR and Management to design KPI frameworks, interactive Power BI and Excel dashboards, and daily-to-monthly MIS reports that leadership relies on.</p>
+          <p>My strength is the full analytics lifecycle: extracting and cleaning data from multiple systems, building reliable ETL and reporting automations in <strong>Python, Power Query and VBA</strong>, modelling in <strong>SQL</strong>, visualising with <strong>Power BI and Tableau</strong>, and forecasting with <strong>machine learning</strong>.</p>
+          <p>I hold a B.Tech in Mechanical Engineering, the IBM Data Science Professional Certificate and the NASSCOM AI Data Scientist certification — and I'm constantly exploring how LLMs and intelligent document processing can make analytics faster.</p>
+          <div class="chips">
+            <span>Business Intelligence</span><span>KPI Frameworks</span><span>Forecasting</span><span>Data Storytelling</span><span>ETL & Automation</span><span>Data Auditing</span>
+          </div>
+        </div>
+        <div class="about-cards reveal">
+          <div class="glass mini"><i>📊</i><div><h4>Dashboards & Reporting</h4><p>Sales, inventory, delivery, workforce & finance KPIs in Power BI and Excel.</p></div></div>
+          <div class="glass mini"><i>⚙️</i><div><h4>Automation</h4><p>Python, Power Query & VBA workflows that removed up to 75% of manual effort.</p></div></div>
+          <div class="glass mini"><i>🔮</i><div><h4>Predictive Analytics</h4><p>Classification & forecasting models reaching 95–97% accuracy.</p></div></div>
+          <div class="glass mini"><i>🗄️</i><div><h4>SQL & Databases</h4><p>PostgreSQL, MySQL, SQLite — advanced queries for business questions.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section alt">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="eyebrow">02 — Experience</span><h2>Where I've made <span class="grad">impact</span></h2></div>
+      <div class="timeline">
+        <article class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="glass t-card">
+            <div class="t-top"><h3>Data Analyst</h3><span class="date">Mar 2025 – Apr 2026</span></div>
+            <p class="company">Husaini Brothers LLC · Dubai, UAE</p>
             <ul>
-                <li><a href="#hero" data-after="Home">Home</a></li>
-                <li><a href="#about" data-after="About">About</a></li>
-                <li><a href="#projects" data-after="Projects">Projects</a></li>
-                <li><a href="#services" data-after="services">Certifications</a></li>
-                <li><a href="#skills" data-after="About">Skills</a></li>
-                <li><a href="#contact" data-after="Contact">Contact</a></li>
+              <li>Built interactive <b>Power BI & Advanced Excel dashboards</b> for sales, inventory, quotation conversion, LPO cycles, delivery performance, workforce productivity and finance.</li>
+              <li>Automated reporting with Python, Power Query and VBA — <b>cutting manual effort by 40%</b> and improving consistency across departments.</li>
+              <li>Delivered daily, weekly and monthly <b>MIS reports</b> for senior management supporting forecasting, budgeting and performance reviews.</li>
+              <li>Ran trend, variance and demand-forecasting studies and inventory optimisation with procurement & logistics teams.</li>
+              <li>Analysed customer, sales and purchase behaviour to surface high-value segments and revenue opportunities.</li>
+              <li>Created data-validation standards and documentation for audit readiness and data integrity.</li>
             </ul>
-            </div>
+            <div class="tags"><span>Power BI</span><span>DAX</span><span>Python</span><span>Power Query</span><span>VBA</span><span>Excel</span></div>
+          </div>
+        </article>
+        <article class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="glass t-card">
+            <div class="t-top"><h3>Python Developer, Data Specialist</h3><span class="date">Oct 2022 – Apr 2024</span></div>
+            <p class="company">Turbolab Technologies Pvt Ltd</p>
+            <ul>
+              <li>Automated end-to-end data workflows — <b>75% less manual effort, 50% better accuracy</b> and 100% on-time delivery to AWS S3, Google Cloud, Dropbox and FTP.</li>
+              <li>Built scalable Python & SQL solutions on the ScrapeHero Marketplace platform.</li>
+              <li>Cleaned and validated datasets with Pandas; created client dashboards and analytical reports.</li>
+              <li>Developed RESTful APIs with FastAPI and Django for real-time data access.</li>
+            </ul>
+            <div class="tags"><span>Python</span><span>Pandas</span><span>SQL</span><span>FastAPI</span><span>Django</span><span>AWS S3</span></div>
+          </div>
+        </article>
+        <article class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="glass t-card">
+            <div class="t-top"><h3>Intern — AI & Data Science</h3><span class="date">Apr 2022 – Sep 2022</span></div>
+            <p class="company">DDU GKY</p>
+            <ul>
+              <li>Applied machine learning to forecast student preferences with <b>85% accuracy</b>.</li>
+              <li>Built KPI reports in Tableau and Power BI; used R & Python for statistical analysis that <b>improved forecasting accuracy by 30%</b>.</li>
+            </ul>
+            <div class="tags"><span>Tableau</span><span>Power BI</span><span>R</span><span>Python</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="eyebrow">03 — Projects</span><h2>Selected <span class="grad">work</span></h2>
+        <p class="sub">Real datasets, real business questions — from dashboards to predictive models.</p></div>
+      <div class="filters reveal" id="filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="bi">Power BI</button>
+        <button data-filter="sql">SQL</button>
+        <button data-filter="ml">ML / Python</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project glass" data-cat="bi">
+          <div class="p-img" style="background-image:url('images/projects/Olympics3.png')"><span class="p-tag">Power BI</span></div>
+          <div class="p-body"><h3>Paris Olympics 2024 Dashboard</h3>
+            <p>Interactive dashboard exploring athlete performance, country participation and medal distribution, with a companion Python (Pandas, Seaborn, Plotly) analysis.</p>
+            <div class="tags"><span>Power BI</span><span>DAX</span><span>Plotly</span></div>
+            <div class="p-links"><a href="https://app.powerbi.com/links/9tqgn7pY2C?ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154&pbi_source=linkShare&bookmarkGuid=8e05350d-a5d0-406c-a31f-f0835cb37c86" target="_blank" rel="noopener">Live Dashboard ↗</a><a href="https://github.com/Vipin-Parameswaran/PARIS-OLYMPICS-2024-ANALYSIS/tree/main/PARIS%20OLYMPICS%202024%20ANALYSIS" target="_blank" rel="noopener">Code ↗</a></div></div>
+        </article>
+
+        <article class="project glass" data-cat="bi">
+          <div class="p-img" style="background-image:url('images/projects/Maven_Market.png')"><span class="p-tag">Power BI</span></div>
+          <div class="p-body"><h3>Maven Market Analysis</h3>
+            <p>End-to-end BI workflow for a multi-national grocery chain: data modelling, calculated measures and an interactive report on sales, revenue and customer trends.</p>
+            <div class="tags"><span>Power BI</span><span>DAX</span><span>Excel</span></div>
+            <div class="p-links"><a href="https://app.powerbi.com/links/7ShV5BnaSG?ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154&pbi_source=linkShare" target="_blank" rel="noopener">Live Dashboard ↗</a></div></div>
+        </article>
+
+        <article class="project glass" data-cat="sql">
+          <div class="p-img" style="background-image:url('images/projects/zomato2.png')"><span class="p-tag">SQL</span></div>
+          <div class="p-body"><h3>Zomato Sales Analysis</h3>
+            <p>Advanced SQL analysis answering growth-critical business questions — uncovering trends, KPIs and actionable insights from large sales datasets.</p>
+            <div class="tags"><span>PostgreSQL</span><span>Window Functions</span><span>CTEs</span></div>
+            <div class="p-links"><a href="https://github.com/Vipin-Parameswaran/Zomato_Sales_Analysis-Advanced_SQL/blob/main/README.md" target="_blank" rel="noopener">Case Study ↗</a><a href="https://github.com/Vipin-Parameswaran/Zomato_Sales_Analysis-Advanced_SQL/tree/main/Zomato_Sales_Analysis" target="_blank" rel="noopener">Code ↗</a></div></div>
+        </article>
+
+        <article class="project glass" data-cat="sql">
+          <div class="p-img" style="background-image:url('images/projects/Netflix_logo.png')"><span class="p-tag">SQL</span></div>
+          <div class="p-body"><h3>Netflix Data Analysis</h3>
+            <p>SQL exploration of Netflix movies & TV shows by genre, release year and rating to reveal content trends and factors behind viewer engagement.</p>
+            <div class="tags"><span>PostgreSQL</span><span>Aggregations</span><span>EDA</span></div>
+            <div class="p-links"><a href="https://github.com/Vipin-Parameswaran/Netflix_Data_Analysis-Postgresql/blob/main/README.md" target="_blank" rel="noopener">Case Study ↗</a><a href="https://github.com/Vipin-Parameswaran/Netflix_Data_Analysis-Postgresql/tree/main/Netflix_SQL_queries" target="_blank" rel="noopener">Code ↗</a></div></div>
+        </article>
+
+        <article class="project glass" data-cat="ml">
+          <div class="p-img" style="background-image:url('images/projects/FHS.png')"><span class="p-tag">ML</span></div>
+          <div class="p-body"><h3>Framingham Heart Study Analysis</h3>
+            <p>Visualised heart-disease risk factors and built a decision-tree pipeline to predict 10-year Coronary Heart Disease risk, evaluating key predictors.</p>
+            <div class="tags"><span>Scikit-Learn</span><span>Decision Trees</span><span>EDA</span></div>
+            <div class="p-links"><a href="https://github.com/Vipin-Parameswaran/FRAMINGHAM-HEART-STUDY-ANALYSIS/blob/main/README.md" target="_blank" rel="noopener">Case Study ↗</a><a href="https://github.com/Vipin-Parameswaran/FRAMINGHAM-HEART-STUDY-ANALYSIS" target="_blank" rel="noopener">Code ↗</a></div></div>
+        </article>
+
+        <article class="project glass" data-cat="ml">
+          <div class="p-img" style="background-image:url('images/projects/bank.png')"><span class="p-tag">ML · 95%</span></div>
+          <div class="p-body"><h3>Bank Loan Eligibility Prediction</h3>
+            <p>Compared Decision Tree, Random Forest and Naive Bayes on 100,000+ records to predict loan approval — achieving <b>95% accuracy</b>.</p>
+            <div class="tags"><span>Random Forest</span><span>Naive Bayes</span><span>Classification</span></div>
+            <div class="p-links"><a href="https://github.com/Vipin-Parameswaran/Data_Analytics_Project--Bank_Loan_Eligibility_Prediction/blob/main/README.md" target="_blank" rel="noopener">Case Study ↗</a><a href="https://github.com/Vipin-Parameswaran/Data_Analytics_Project--Bank_Loan_Eligibility_Prediction/tree/main/Bank%20Loan%20Eligibility%20Prediction" target="_blank" rel="noopener">Code ↗</a></div></div>
+        </article>
+
+        <article class="project glass" data-cat="ml">
+          <div class="p-img" style="background-image:url('images/projects/ftag.png')"><span class="p-tag">ML · 97%</span></div>
+          <div class="p-body"><h3>FASTag Fraud Detection</h3>
+            <p>Machine-learning fraud detection for FASTag toll transactions on 200,000+ records, reaching <b>97% accuracy</b> and strengthening payment integrity.</p>
+            <div class="tags"><span>Python</span><span>Scikit-Learn</span><span>Fraud Analytics</span></div>
+            <div class="p-links"><a href="https://github.com/Vipin-Parameswaran/FASTAG_FRAUD_DETECTION-Data_Analytics_Project/blob/main/README.md" target="_blank" rel="noopener">Case Study ↗</a><a href="https://github.com/Vipin-Parameswaran/FASTAG_FRAUD_DETECTION-Data_Analytics_Project/tree/main/FastTag%20Fraud%20Detection" target="_blank" rel="noopener">Code ↗</a></div></div>
+        </article>
+
+        <article class="project glass" data-cat="ml">
+          <div class="p-img" style="background-image:url('images/projects/Olympice_logo.png')"><span class="p-tag">Python</span></div>
+          <div class="p-body"><h3>Paris Olympics 2024 Analysis</h3>
+            <p>Python visual analytics with Pandas, Matplotlib, Seaborn and Plotly revealing patterns in athlete performance, participation and medals.</p>
+            <div class="tags"><span>Pandas</span><span>Seaborn</span><span>Plotly</span></div>
+            <div class="p-links"><a href="https://github.com/Vipin-Parameswaran/PARIS-OLYMPICS-2024-ANALYSIS/tree/main/PARIS%20OLYMPICS%202024%20ANALYSIS" target="_blank" rel="noopener">Code ↗</a></div></div>
+        </article>
+      </div>
+      <div class="center reveal"><a class="btn btn-ghost" href="https://github.com/Vipin-Parameswaran" target="_blank" rel="noopener">See all repositories on GitHub →</a></div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="eyebrow">04 — Skills</span><h2>My analytics <span class="grad">toolkit</span></h2></div>
+      <div class="skills-grid">
+        <div class="glass skill-box reveal">
+          <h3>Core Tools</h3>
+          <div class="bar"><div class="bar-top"><span>SQL (PostgreSQL, MySQL)</span><em>90%</em></div><div class="track"><i data-w="90"></i></div></div>
+          <div class="bar"><div class="bar-top"><span>Power BI & DAX</span><em>92%</em></div><div class="track"><i data-w="92"></i></div></div>
+          <div class="bar"><div class="bar-top"><span>Advanced Excel / Power Query / VBA</span><em>93%</em></div><div class="track"><i data-w="93"></i></div></div>
+          <div class="bar"><div class="bar-top"><span>Python (Pandas, Scikit-Learn)</span><em>85%</em></div><div class="track"><i data-w="85"></i></div></div>
+          <div class="bar"><div class="bar-top"><span>Tableau</span><em>75%</em></div><div class="track"><i data-w="75"></i></div></div>
         </div>
+        <div class="skill-cards">
+          <div class="glass skill-card reveal"><i>📈</i><h4>Data Analysis</h4><p>Data cleaning, ETL, EDA, statistical & predictive analysis, data auditing</p></div>
+          <div class="glass skill-card reveal"><i>🎨</i><h4>Visualization</h4><p>Power BI, Tableau, Google Analytics, Excel dashboards, storytelling</p></div>
+          <div class="glass skill-card reveal"><i>🗄️</i><h4>Databases & Cloud</h4><p>MySQL, SQLite, PostgreSQL, DB2, AWS S3, Google Cloud, FTP</p></div>
+          <div class="glass skill-card reveal"><i>🤖</i><h4>ML & AI</h4><p>Scikit-Learn, forecasting, LLMs (GPT, Claude), NLP, OCR document processing</p></div>
+          <div class="glass skill-card reveal"><i>🛠️</i><h4>Dev Tools</h4><p>Jupyter, VS Code, Git/GitHub/GitLab, Redis, FastAPI, Django, HTML & CSS</p></div>
+          <div class="glass skill-card reveal"><i>🤝</i><h4>Soft Skills</h4><p>Communication, stakeholder engagement, collaboration, analytical mindset</p></div>
         </div>
-    </section>
-    <!-- End Header -->
+      </div>
+    </div>
+  </section>
 
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="eyebrow">05 — Certifications</span><h2>Always <span class="grad">learning</span></h2></div>
+      <div class="cert-grid">
+        <article class="glass cert reveal">
+          <img class="cert-logo" src="images/certifications/ibm_logo.png" alt="IBM">
+          <h3>IBM Data Science Professional Certificate</h3><small>Coursera · Apr – Jul 2024</small>
+          <p>Python, machine learning, data analysis, visualization and SQL with hands-on real-world projects.</p>
+          <a href="https://github.com/Vipin-Parameswaran/IBM_DataScience_Proffessional_Certificate/tree/main" target="_blank" rel="noopener">View certificate ↗</a>
+        </article>
+        <article class="glass cert reveal">
+          <img class="cert-logo" src="images/certifications/nassccom_logo.png" alt="NASSCOM">
+          <h3>NASSCOM Certified AI Data Scientist</h3><small>SSC/Q8104 · NSQF Level 8 · Mar 2024</small>
+          <p>Advanced data science, predictive modelling and ML for data-driven decision making.</p>
+          <a href="https://drive.google.com/file/d/1sbT64DP3oo0ae_UxCahW2oH6hmUfKLsV/view?usp=drive_link" target="_blank" rel="noopener">View certificate ↗</a>
+        </article>
+        <article class="glass cert reveal">
+          <img class="cert-logo" src="images/certifications/udemy_logo1.png" alt="Udemy">
+          <h3>Microsoft Power BI Desktop for BI</h3><small>Udemy · Aug 2024</small>
+          <p>Data import & transformation, interactive dashboards and advanced DAX calculations.</p>
+          <a href="https://drive.google.com/file/d/1o3bWC6QXdhI0uUqzxEzga65A2OIzYnFp/view?usp=drive_link" target="_blank" rel="noopener">View certificate ↗</a>
+        </article>
+        <article class="glass cert reveal">
+          <img class="cert-logo" src="images/certifications/forage_icon.png" alt="Forage">
+          <h3>Accenture Data Analytics & Visualization</h3><small>Forage Virtual Internship · Sep 2024</small>
+          <p>Analysed social media & customer data, delivered insights via PowerPoint and dashboards.</p>
+          <a href="https://drive.google.com/file/d/1YKqgSN4MaYfUUNyCiSHWZ8cyp08h-b1Y/view?usp=drive_link" target="_blank" rel="noopener">View certificate ↗</a>
+        </article>
+      </div>
+      <div class="glass edu reveal"><i>🎓</i><div><h4>B.Tech, Mechanical Engineering</h4><p>Cochin University of Science and Technology · 2017 – 2021 · CGPA 7.94</p></div></div>
+    </div>
+  </section>
 
-    <!-- Hero Section  -->
-    <section id="hero">
-        <div class="hero container">
-        <div>
-            <h1>Hello,<span></span></h1>
-            <h1>Its me..!!!!<span></span></h1>
-            <h1>Vipin Parameswaran<span></span></h1>
-            <h1>Welcome<span></span></h1>
-            <h1>to my<span></span></h1>
-            <a href="#projects" type="button" class="cta">Portfolio</a>
+  <!-- CONTACT -->
+  <section id="contact" class="section alt">
+    <div class="wrap">
+      <div class="section-head reveal"><span class="eyebrow">06 — Contact</span><h2>Let's build something <span class="grad">insightful</span></h2>
+        <p class="sub">Have a role, project or dataset in mind? I'd love to hear about it.</p></div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <a class="glass c-item" href="mailto:vipinparameswaran1985@gmail.com"><i>✉️</i><div><small>Email</small><b>vipinparameswaran1985@gmail.com</b></div></a>
+          <a class="glass c-item" href="tel:+971568223958"><i>📞</i><div><small>Phone / WhatsApp</small><b>+971 56 822 3958</b></div></a>
+          <div class="glass c-item"><i>📍</i><div><small>Location</small><b>Deira, Dubai, UAE</b></div></div>
+          <a class="glass c-item" href="https://www.linkedin.com/in/vipin-parameswaran/" target="_blank" rel="noopener"><i>💼</i><div><small>LinkedIn</small><b>/in/vipin-parameswaran</b></div></a>
         </div>
-        </div>
-    </section>
+        <form class="glass form reveal" id="contactForm">
+          <label>Name<input type="text" id="fName" placeholder="Your name" required></label>
+          <label>Email<input type="email" id="fEmail" placeholder="you@company.com" required></label>
+          <label>Message<textarea id="fMsg" rows="5" placeholder="Tell me about your project or role…" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send message →</button>
+          <small class="note">Opens your email app with the message pre-filled.</small>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
 
-    <!-- Hero Section  -->
-    <!-- <section id="hero">
-        <div class="hero container">
-        <div>
-            <h1>Hello, <span></span></h1>
-            <h1>My Name is <span></span></h1>
+  <footer class="footer">
+    <div class="wrap foot-inner">
+      <div><a href="#home" class="logo">Vipin Parameswaran<span>.</span></a><p>Data Analyst · Power BI · SQL · Python</p></div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/vipin-parameswaran/" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="icons/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/Vipin-Parameswaran" target="_blank" rel="noopener" aria-label="GitHub"><img src="icons/github.png" alt="GitHub"></a>
+        <a href="https://linktr.ee/Vipin_Parameswaran" target="_blank" rel="noopener" aria-label="Linktree"><img src="icons/linktree_logo.png" alt="Linktree"></a>
+        <a href="https://www.novypro.com/profile_about/vipin-parameswaran" target="_blank" rel="noopener" aria-label="NovyPro"><img src="icons/novypro_logo.png" alt="NovyPro"></a>
+        <a href="https://www.instagram.com/vip__.in_/" target="_blank" rel="noopener" aria-label="Instagram"><img src="icons/insta_logo.png" alt="Instagram"></a>
+      </div>
+    </div>
+    <p class="copy">© <span id="year"></span> Vipin Parameswaran. Designed & built with care.</p>
+  </footer>
 
-            <h1>Vipin Parameswaran <span></span></h1>
-            <a href="#projects" type="button" class="cta">Portfolio</a>
-        </div>
-        </div>
-    </section> -->
-
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="about container">
-        <div class="col-left">
-            <div class="about-img">
-            <img src="./images/about/profile1.jpg" alt="img">
-            </div>
-        </div>
-        <div class="col-right">
-            <h1 class="section-title">About <span>me</span></h1>
-            <h2>Data Analyst</h2>
-            <p>Welcome to my portfolio! I am a passionate data analyst with expertise in various tools and technologies. My journey involves working on projects that revolve around data visualization, statistical analysis, and generating business insights to drive informed decisions.</p>
-            <p>During my studies, I honed my ability to derive meaningful insights from complex datasets and develop robust analytical solutions. I thrive on challenges and enjoy working on end-to-end projects, from data collection and preprocessing, visualizing results and presenting actionable insights to predicting the unknown outcomes. My analytical skills, combined with my proficiency in Machine Learning, data visualization and statistical analysis, enable me to tackle a variety of data-driven problems.</p>
-            <p>Feel free to explore my projects and articles in the sections below. I welcome you to download my code from GitHub and explore the work I’ve shared. My goal is to combine my technical skills with a passion for storytelling to drive meaningful outcomes.</p>
-            <a href="./images/Vipin_Parameswaran_Resume.pdf" download="Vipin Resume" class="cta">Download Resume</a>
-        </div>
-        </div>
-    </section>
-    <!-- End About Section -->
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <div class="projects container">
-            <div class="projects-header">
-                <h1 class="section-title">PRO<span>JECTS</span></h1>
-            </div>
-
-            <!-- Machine Learning / Python Projects Section -->
-            <div class="project-subsection">
-                <h2 class="project-subheading">Machine Learning / Python Projects</h2>
-                <div class="project-row">
-
-                    <div class="project-item" style="background-image: url('images/projects/FHS.png');">
-                        <div class="overlay">
-                            <h1>Framingham Heart Study Analysis</h1>
-                            <h2>Predictive Analytics</h2>
-                            <p>Analyzed data from the Framingham Heart Study to visualize risk factors for heart disease and built a machine learning pipeline using decision trees to predict the ten-year risk of Coronary Heart Disease. The model's performance was evaluated to identify significant predictors and to improve accuracy in forecasting heart disease risk.</p>
-                            <div class="btn-container">
-                                <a href="https://github.com/Vipin-Parameswaran/FRAMINGHAM-HEART-STUDY-ANALYSIS/blob/main/README.md" class="btn btn-primary">About Project</a>
-                                <a href="https://github.com/Vipin-Parameswaran/FRAMINGHAM-HEART-STUDY-ANALYSIS" class="btn btn-secondary">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item" style="background-image: url('images/projects/bank.png');">
-                        <div class="overlay">
-                            <h1>Bank Loan Eligibility Prediction</h1>
-                            <h2>Machine Learning Model</h2>
-                            <p>Analyzed a loan dataset using multiple Machine Learning models (DecisionTreeClassifier, RandomForestClassifier, Naive Bayes) to predict loan eligibility. Selected the best-suited model based on accuracy score for predicting outcomes on real datasets.</p>
-                            <div class="btn-container">
-                                <a href="https://github.com/Vipin-Parameswaran/Data_Analytics_Project--Bank_Loan_Eligibility_Prediction/blob/main/README.md" class="btn btn-primary">About Project</a>
-                                <a href="https://github.com/Vipin-Parameswaran/Data_Analytics_Project--Bank_Loan_Eligibility_Prediction/tree/main/Bank%20Loan%20Eligibility%20Prediction" class="btn btn-secondary">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-item" style="background-image: url('images/projects/ftag.png');">
-                        <div class="overlay">
-                            <h1>Fastag Fraud Detection</h1>
-                            <h2>Fraud Detection System</h2>
-                            <p>Developed a robust machine learning-based fraud detection system for Fastag transactions, using RFID technology to secure toll payments, minimizing risks and improving transaction integrity.</p>
-                            <div class="btn-container">
-                                <a href="https://github.com/Vipin-Parameswaran/FASTAG_FRAUD_DETECTION-Data_Analytics_Project/blob/main/README.md" class="btn btn-primary">About Project</a>
-                                <a href="https://github.com/Vipin-Parameswaran/FASTAG_FRAUD_DETECTION-Data_Analytics_Project/tree/main/FastTag%20Fraud%20Detection" class="btn btn-secondary">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item" style="background-image: url('images/projects/Olympice_logo.png');">
-                        <div class="overlay">
-                            <h1>Paris Olympics 2024</h1>
-                            <h2>Data Analysis and Visualization</h2>
-                            <p>The visualizations using Python's Pandas, Matplotlib, Seaborn, and Plotly provide dynamic insights into the Paris Olympics 2024 datasets, revealing key patterns in athlete performance, country participation, and medal distribution.</p>
-                            <div class="btn-container">
-                                <a href="https://github.com/Vipin-Parameswaran/PARIS-OLYMPICS-2024-ANALYSIS/tree/main/PARIS%20OLYMPICS%202024%20ANALYSIS" class="btn btn-primary">Source Code</a>
-                                <!-- <a href="https://github.com/Vipin-Parameswaran/PARIS-OLYMPICS-2024-ANALYSIS/tree/main/PARIS%20OLYMPICS%202024%20ANALYSIS" class="btn btn-secondary">Source Code</a> -->
-                            </div>
-                        </div>
-                </div>
-            </div>
-
-            <!-- Advanced SQL Projects Section -->
-            <div class="project-subsection">
-                <h2 class="project-subheading">Advanced SQL Projects</h2>
-                <div class="project-row">
-                    <div class="project-item" style="background-image: url('images/projects/zomato2.png');">
-                        <div class="overlay">
-                            <h1>ZOMATO SALES ANALYSIS</h1>
-                            <h2>Business Analysis</h2>
-                            <p>In this project, Conducted an in-depth analysis of Zomato’s sales data, using SQL to answer critical business questions that impact Zomato's growth and profitability. By leveraging advanced SQL techniques, uncovered trends, identified key performance indicators (KPIs), and generated actionable insights that can guide business decisions.</p>
-                            <div class="btn-container">
-                                <a href="https://github.com/Vipin-Parameswaran/Zomato_Sales_Analysis-Advanced_SQL/blob/main/README.md" class="btn btn-primary">About Project</a>
-                                <a href="https://github.com/Vipin-Parameswaran/Zomato_Sales_Analysis-Advanced_SQL/tree/main/Zomato_Sales_Analysis" class="btn btn-secondary">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-item" style="background-image: url('images/projects/Netflix_logo.png');">
-                        <div class="overlay">
-                            <h1>NETFLIX DATA ANALYSIS</h1>
-                            <h2>Business Analysis</h2>
-                            <p>This project focuses on an in-depth analysis of Netflix's movies and TV shows dataset using SQL to uncover insights and answer key business questions. By examining various attributes such as genre, release year, and rating, the analysis aims to reveal trends, patterns, and factors that influence viewer engagement and content popularity.</p>
-                            <div class="btn-container">
-                                <a href="https://github.com/Vipin-Parameswaran/Netflix_Data_Analysis-Postgresql/blob/main/README.md" class="btn btn-primary">About Project</a>
-                                <a href="https://github.com/Vipin-Parameswaran/Netflix_Data_Analysis-Postgresql/tree/main/Netflix_SQL_queries" class="btn btn-secondary">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Power BI / Data Visualization Projects Section -->
-            <div class="project-subsection">
-                <h2 class="project-subheading">Power BI Dashboards</h2>
-                <div class="project-row">
-                    <div class="project-item" style="background-image: url('images/projects/Olympics3.png');">
-                        <div class="overlay">
-                            <h1>Olympics 2024 DASHBOARD</h1>
-                            <h2>Data Analysis and Visualization</h2>
-                            <p>Power BI dashboard offers an intuitive and interactive platform to explore real-time data, track key metrics, and visualize trends related to the games. The visualizations provide dynamic insights into the Paris Olympics 2024 datasets, revealing key patterns in athlete performance, country participation, and medal distribution.</p>
-                            <div class="btn-container">
-                                <a href="https://app.powerbi.com/links/9tqgn7pY2C?ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154&pbi_source=linkShare&bookmarkGuid=8e05350d-a5d0-406c-a31f-f0835cb37c86" class="btn btn-primary">Explore Dashboard</a>
-                                <a href="https://github.com/Vipin-Parameswaran/PARIS-OLYMPICS-2024-ANALYSIS/tree/main/PARIS%20OLYMPICS%202024%20ANALYSIS" class="btn btn-secondary">Source Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-item" style="background-image: url('images/projects/Maven_Market.png');">
-                        <div class="overlay">
-                            <h1>Maven Market Analysis</h1>
-                            <h2>Business Intelligence</h2>
-                            <p>Applied Power BI skills to analyze data from Maven Market, a multi-national grocery chain. Involved in complete business intelligence workflow, creating calculated fields, and designing an interactive report for actionable insights.</p>
-                            <div class="btn-container">
-                                <a href="https://app.powerbi.com/links/7ShV5BnaSG?ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154&pbi_source=linkShare" class="btn btn-primary">Explore Dashboard</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="project-item" style="background-image: url('images/projects/AdventureWorks.png');">
-                        <div class="overlay">
-                            <h1>Adventure Works Dashboard</h1>
-                            <h2>Data Visualization</h2>
-                            <p>Developed an interactive dashboard for Adventure Works, tracking key performance indicators (KPIs) like sales, revenue, and profit while analyzing product-level trends across regions.</p>
-                            <div class="btn-container">
-                                <a href="https://app.powerbi.com/reportEmbed?reportId=2364b5ff-0159-42ff-af95-6a52d6e66065&autoAuth=true&ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154" class="btn btn-primary">Explore Dashboard</a>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Projects Section -->
-    <!-- <section id="projects">
-        <div class="projects container">
-            <div class="projects-header">
-                <h1 class="section-title">Recent <span>Projects</span></h1>
-            </div>
-            <div class="all-projects">
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Paris Olympics 2024</h1>
-                        <h2>Data Analysis and Visualization</h2>
-                        <p>The visualizations using Python's Pandas, Matplotlib, Seaborn, and Plotly provide dynamic insights into the Paris Olympics 2024 datasets, revealing key patterns in athlete performance, country participation, and medal distribution. Additionally, a Power BI dashboard offers an intuitive and interactive platform to explore real-time data, track key metrics, and visualize trends related to the games, enabling users to gain actionable insights with ease.</p>
-                        <div class="btn-container">
-                            <a href="https://app.powerbi.com/links/9tqgn7pY2C?ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154&pbi_source=linkShare&bookmarkGuid=8e05350d-a5d0-406c-a31f-f0835cb37c86" class="btn btn-primary">Explore Dashboard</a>
-                            <a href="https://github.com/Vipin-Parameswaran/PARIS-OLYMPICS-2024-ANALYSIS/tree/main/PARIS%20OLYMPICS%202024%20ANALYSIS" class="btn btn-secondary">Source Code</a>
-                        </div>                    
-                        </div>
-                    <div class="project-img">
-                        <img src="images/projects/Olympics3.png" alt="Paris Olympics 2024">
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Framingham Heart Study Analysis</h1>
-                        <h2>Predictive Analytics</h2>
-                        <p>Analyzed data from the Framingham Heart Study to visualize risk factors for heart disease and built a machine learning pipeline using decision trees to predict the ten-year risk of Coronary Heart Disease. The model's performance was evaluated to identify significant predictors and to improve accuracy in forecasting heart disease risk.</p>
-                        <div class="btn-container">
-                            <a href="https://github.com/Vipin-Parameswaran/FRAMINGHAM-HEART-STUDY-ANALYSIS/blob/main/README.md" class="btn btn-primary">About Project</a>
-                            <a href="https://github.com/Vipin-Parameswaran/FRAMINGHAM-HEART-STUDY-ANALYSIS" class="btn btn-secondary">Source Code</a>
-                        </div>
-                        </div>
-                    <div class="project-img">
-                        <img src="images/projects/FHS.png" alt="Framingham Heart Study">
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Bank Loan Eligibility Prediction</h1>
-                        <h2>Machine Learning Model</h2>
-                        <p>Analyzed a loan dataset using multiple Machine Learning models (DecisionTreeClassifier, RandomForestClassifier, Naive Bayes) to predict loan eligibility. Selected the best-suited model based on accuracy score for predicting outcomes on real datasets.</p>
-                        <div class="btn-container">
-                            <a href="https://github.com/Vipin-Parameswaran/Data_Analytics_Project--Bank_Loan_Eligibility_Prediction/blob/main/README.md" class="btn btn-primary">About Project</a>
-                            <a href="https://github.com/Vipin-Parameswaran/Data_Analytics_Project--Bank_Loan_Eligibility_Prediction/tree/main/Bank%20Loan%20Eligibility%20Prediction" class="btn btn-secondary">Source Code</a>
-                        </div>
-                        </div>
-                    <div class="project-img">
-                        <img src="images/projects/bank.png" alt="Bank Loan Eligibility">
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Fastag Fraud Detection</h1>
-                        <h2>Fraud Detection System</h2>
-                        <p>Developed a robust machine learning-based fraud detection system for Fastag transactions, using RFID technology to secure toll payments, minimizing risks and improving transaction integrity.</p>
-                        <div class="btn-container">
-                            <a href="https://github.com/Vipin-Parameswaran/FASTAG_FRAUD_DETECTION-Data_Analytics_Project/blob/main/README.md" class="btn btn-primary">About Project</a>
-                            <a href="https://github.com/Vipin-Parameswaran/FASTAG_FRAUD_DETECTION-Data_Analytics_Project/tree/main/FastTag%20Fraud%20Detection" class="btn btn-secondary">Source Code</a>
-                        </div>
-                        </div>
-                    <div class="project-img">
-                        <img src="images/projects/ftag.png" alt="Fastag Fraud Detection">
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Maven Market Analysis</h1>
-                        <h2>Business Intelligence</h2>
-                        <p>Applied Power BI skills to analyze data from Maven Market, a multi-national grocery chain. Involved in complete business intelligence workflow, creating calculated fields, and designing an interactive report for actionable insights.</p>
-                        <div class="btn-container">
-                            <a href="https://app.powerbi.com/links/7ShV5BnaSG?ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154&pbi_source=linkShare" class="btn btn-primary">Explore Dashboard</a>
-                        </div>
-                        </div>
-                    <div class="project-img">
-                        <img src="images/projects/Maven_Market.png" alt="Maven Market Analysis">
-                    </div>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>Adventure Works Dashboard</h1>
-                        <h2>Data Visualization</h2>
-                        <p>Developed an interactive dashboard for Adventure Works, tracking key performance indicators (KPIs) like sales, revenue, and profit while analyzing product-level trends across regions.</p>
-                        <div class="btn-container">
-                            <a href="https://app.powerbi.com/reportEmbed?reportId=2364b5ff-0159-42ff-af95-6a52d6e66065&autoAuth=true&ctid=898f03ee-5c8b-4dab-b91e-f0f3f2e30154" class="btn btn-primary">Explore Dashboard</a>
-                        </div>
-                        </div>
-                    <div class="project-img">
-                        <img src="images/projects/AdventureWorks.png" alt="Adventure Works Dashboard">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End Projects Section -->
-
-    <!-- Service Section -->
-    <section id="services">
-        <div class="services container">
-        <div class="service-top">
-            <h1 class="section-title">Cerif<span>icates</span></h1>
-            <h2>Here are some of the certifications I have earned to enhance my skills and knowledge in data analysis, machine learning, and AI.</h2>
-        </div>
-        <div class="service-bottom">
-            <div class="service-item">
-            <div class="icon"><img src="images/certifications/ibm_logo.png" /></div>
-            <h2>IBM DATA SCIENCE PROFFESSIONAL CERTIFICATION</h2>
-            <p class="card-text">The program included courses on Python, data analysis, machine learning, data visualization, and SQL.
-                Practical projects and hands-on labs were integral parts of the training, providing real-world experience
-                in applying data science techniques to solve complex problems.</p>
-            <div class="btn-container">
-                <a href="https://github.com/Vipin-Parameswaran/IBM_DataScience_Proffessional_Certificate/tree/main" class="btn btn-primary">View Certificate</a>
-            </div>
-            </div>
-            <div class="service-item">
-            <div class="icon"><img src="images/certifications/udemy_logo1.png" /></div>
-            <h2>MICROSOFT POWER BI DESKTOP FOR BUSINESS INTELLIGENCE</h2>
-            <p class="card-text">The program included comprehensive training on data modeling, data visualization, and business intelligence reporting using Power BI. Hands-on projects and practical exercises were integral, providing real-world experience in crafting insightful dashboards and reports for complex business scenarios.</p>
-            <div class="btn-container">
-                <a href="https://drive.google.com/file/d/1o3bWC6QXdhI0uUqzxEzga65A2OIzYnFp/view?usp=drive_link" class="btn btn-primary">View Certificate</a>
-            </div>
-            </div>
-            <div class="service-item">
-            <div class="icon"><img src="images/certifications/nassccom_logo.png" /></div>
-            <h2>NASSCCOM CERTIFIED - AI - DATA SCIENTIST (SSC/Q8104)</h2>
-            <p class="card-text">Achieved the NASSCOM Certified AI Data Scientist (SSC/Q8104) certification, demonstrating advanced skills in data science. This exam certification aligns with the National Skill Qualifications Framework Level 8, affirming expertise in predictive modeling and machine learning.</p>
-            <div class="btn-container">
-                <a href="https://drive.google.com/file/d/1sbT64DP3oo0ae_UxCahW2oH6hmUfKLsV/view?usp=drive_link" class="btn btn-primary">View Certificate</a>
-            </div>
-            </div>
-            <div class="service-item">
-            <div class="icon"><img src="images/certifications/forage_icon.png" /></div>
-            <h2>Accenture Data Analytics and Visualization - Virtual Internship</h2>
-            <p> Completed a job simulation from Accenture. Analyzed and modeled datasets to uncover social media trends, providing actionable
-                insights that shaped the client’s strategy.
-                Created and presented a PowerPoint deck and video presentation to effectively
-                communicate insights.
-            </p>
-            <div class="btn-container">
-                <a href="https://drive.google.com/file/d/1YKqgSN4MaYfUUNyCiSHWZ8cyp08h-b1Y/view?usp=drive_link" class="btn btn-primary">View Certificate</a>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
-   <!-- End Service Section -->
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="skills container">
-        <div class="skills-top">
-            <h1 class="section-title">Sk<span>ills</span></h1>
-        </div>
-        <div class="skills-bottom">
-            <div class="skills-item">
-            <div class="icon"><img src="images/skills/1.png" alt="Programming Languages"></div>
-            <h2>Programming Languages</h2>
-            <p class="card-text">Python, SQL, R, Advanced Excel, Basics in HTML, CSS</p>
-            </div>
-            <div class="skills-item">
-            <div class="icon"><img src="images/skills/2.png" alt="Data Visualization"></div>
-            <h2>Data Visualization</h2>
-            <p class="card-text">Matplotlib, Seaborn, Power BI, Tableau</p>
-            </div>
-            <div class="skills-item">
-            <div class="icon"><img src="images/skills/3.png" alt="Database Management"></div>
-            <h2>Database Management</h2>
-            <p class="card-text">MySQL, PostgreSQL, SQLite</p>
-            </div>
-            <div class="skills-item">
-            <div class="icon"><img src="images/skills/4.png" alt="Machine Learning"></div>
-            <h2>Machine Learning</h2>
-            <p class="card-text">Scikit-Learn, ML Algorithms</p>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- End Skills Section -->
-
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="contact container">
-        <div>
-            <h1 class="section-title">Contact <span>info</span></h1>
-        </div>
-        <div class="contact-items">
-            <div class="contact-item">
-            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
-            <div class="contact-info">
-                <h1>Phone</h1>
-                <h2>+91 9605151985</h2>
-            </div>
-            </div>
-            <div class="contact-item">
-            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-            <div class="contact-info">
-                <h1>Email</h1>
-                <h2>vipinparameswaran1985@gmail.com</h2>
-            </div>
-            </div>
-            <div class="contact-item">
-            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
-            <div class="contact-info">
-                <h1>Secondary Email</h1>
-                <h2>15180095vpn@gmail.com</h2>
-            </div>
-            </div>
-            <div class="contact-item">
-            <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
-            <div class="contact-info">
-                <h1>Address</h1>
-                <h2>Palakkad, Kerala, India - 678508</h2>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- End Contact Section -->
-
-    <!-- Footer -->
-    <section id="footer">
-        <div class="footer container">
-        <div class="brand">
-            <h1><span>V</span>ipin <span> P</span>arameswaran</h1>
-        </div>
-        <h2>Feel Free to Connect</h2>
-        <div class="social-icon">
-            <div class="social-item">
-            <a href="https://www.linkedin.com/in/vipin-parameswaran/"><img src="./icons/linkedin.png" alt="img" /></a>
-            </div>
-            <div class="social-item">
-            <a href="https://github.com/Vipin-Parameswaran"><img src="./icons/github.png" alt="img"/></a>
-            </div>
-            <div class="social-item">
-            <a href="https://linktr.ee/Vipin_Parameswaran"><img src="./icons/linktree_logo.png" alt="img" /></a>
-            </div>
-            <div class="social-item">
-            <a href="https://www.novypro.com/profile_about/vipin-parameswaran"><img src="./icons/novypro_logo.png" alt="img" /></a>
-            </div>
-            <div class="social-item">
-            <a href="https://www.instagram.com/vip__.in_/"><img src="./icons/insta_logo.png" alt="img" /></a>
-            </div>
-        </div>
-        <p>***</p>
-        </div>
-    </section>
-    <!-- End Footer -->
-<script src="./app.js"></script>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
 </body>
-
 </html>
